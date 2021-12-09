@@ -5,3 +5,7 @@
 grep -rnw '/path/to/somewhere/' -e 'pattern' 
 
 
+# find patterns and then sort alphabatecally 
+
+grep -rnw '/path/to/somewhere/' -e 'pattern' | cut -d '/' -f 2 | sort
+
